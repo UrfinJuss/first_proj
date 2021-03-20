@@ -6,7 +6,7 @@ from tours.views import custom_handler400, custom_handler403, custom_handler404,
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.main_view),
+    path('', views.main_view, name='main'),
     path('departure/<str:departure>', views.departure_view, name='departure'),
     path('tour/<int:id>', views.tour_view, name='tour'),
 
