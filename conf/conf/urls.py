@@ -1,5 +1,6 @@
 from django.contrib import admin
 from django.urls import path
+
 from tours import views
 from tours.views import custom_handler400, custom_handler403, custom_handler404, custom_handler500
 
