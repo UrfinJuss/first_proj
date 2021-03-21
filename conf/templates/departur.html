@@ -6,8 +6,8 @@
     <h1 class="display-5 mt-4">Летим {{ departure }}</h1>
     <p class="mb-4">Найдено 6 туров, от {{ minprice }} до {{ maxprice }} и от {{ minday }} ночей до {{ maxday}} ночей</p>
     <!-- CARDS -->
-    <div class="row mt-5">
-    {% for tour_id, tour in random_tours.items %}
+<div class="row mt-5">
+    {% for tour_id, tour in dep_tours.items %}
       <div class="col-4">
         <div class="card mb-4">
           <img class="card-img-top embed-responsive-item" src="{{ tour.picture }}" alt="" />
